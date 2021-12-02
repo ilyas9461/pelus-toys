@@ -1,5 +1,8 @@
-### **Peluş Oyuncaklar Kontrol Kartı**
+
 <h1 align="center">Peluş Oyuncaklar Kontrol Kartı </h1>
+
+### Plush Toys Control Board 
+
 <h4 align="left">İÇERİK</h4>
 
 - [Giriş](#Giriş)
