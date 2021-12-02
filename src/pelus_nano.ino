@@ -165,9 +165,8 @@ void loop()
     }
     else
     {
-      is_pressed_gas_pedal = false;
-      // engineStop();
-      engineRampStop();
+      is_pressed_gas_pedal = false;    
+      engineRampStop();//engineStop();
     }
   }
 
@@ -433,17 +432,24 @@ void lcdMenu()
 
 void max_current_setting()
 {
-  int int_c = EEPROM.read(EE_ADR_MAX_I_INT_VALUE);
-  int float_c = EEPROM.read(EE_ADR_MAX_I_FLOAT_VALUE);
+  // unsigned int int_c = EEPROM.get(EE_ADR_MAX_I_INT_VALUE);
+  // unsigned int float_c = EEPROM.get(EE_ADR_MAX_I_FLOAT_VALUE);
+  int int_c;
+  int float_c;
+  EEPROM.get(EE_ADR_MAX_I_INT_VALUE,int_c);
+  EEPROM.get(EE_ADR_MAX_I_FLOAT_VALUE, float_c);
 
   // char buffer[25];
   // String buffer="";
 
-  if (int_c == 255 && float_c == 255)
+  if (int_c == 0xFFFF && float_c == 0xFFFF)
   {
     int_c = 4;
     float_c = 2;
   }
+
+  if (int_c >10) int_c = 4;
+  if(float_c>9) float_c = 0;
 
   delay(1000);
   lcd.clear();
@@ -487,10 +493,11 @@ void max_current_setting()
   } while (digitalRead(BTN_OK_PIN));
 
   delay(BTN_DELAY);
-  EEPROM.write(EE_ADR_MAX_I_INT_VALUE, int_c);
-  EEPROM.write(EE_ADR_MAX_I_FLOAT_VALUE, float_c);
-  // EEPROM.put(EE_ADR_MAX_I_INT_VALUE, int_c);
-  // EEPROM.put(EE_ADR_MAX_I_FLOAT_VALUE, float_c);
+  // EEPROM.write(EE_ADR_MAX_I_INT_VALUE, int_c);
+  // EEPROM.write(EE_ADR_MAX_I_FLOAT_VALUE, float_c);
+
+  EEPROM.put(EE_ADR_MAX_I_INT_VALUE, int_c);
+  EEPROM.put(EE_ADR_MAX_I_FLOAT_VALUE, float_c);
 
   lcd.clear();
   lcd.setCursor(0, 0);
@@ -832,7 +839,7 @@ void ee_initial_stat()
 
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("MAX. HIZ :");
+  lcd.print("MAX. HIZ :");         
   lcd.setCursor(0, 1);
   lcd.print("  " + String(engine_speed));
 
@@ -853,9 +860,9 @@ void ee_initial_stat()
   // int int_c = EEPROM.read(EE_ADR_MAX_I_INT_VALUE);
   // int float_c = EEPROM.read(EE_ADR_MAX_I_FLOAT_VALUE);
 
-  int int_c = 4;
+  unsigned int int_c = 4;
   EEPROM.get((int)EE_ADR_MAX_I_INT_VALUE, int_c);
-  int float_c = 2;
+  unsigned int float_c = 2;
   EEPROM.get((int)EE_ADR_MAX_I_FLOAT_VALUE, float_c);
 
   if (int_c == 255 && float_c == 255)
@@ -864,6 +871,9 @@ void ee_initial_stat()
     float_c = 2;
   }
   max_current = (float)((float)int_c + (float)float_c / 10.0);
+
+  if(max_current<0.0) max_current=4.00;
+  if(max_current>20) max_current=10;
 
   lcd.clear();
   lcd.setCursor(0, 0);

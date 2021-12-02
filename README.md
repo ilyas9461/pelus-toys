@@ -15,13 +15,13 @@
 <img src="img/pelus_ornek.jpg" alt="pelus" width="35%" height="35%" align="center" style="margin:10px">
 </p>
 
-Yapılan çalışmada hareketli peluş oyuncaklar için kontrol kartı yapılmıştır. Geliştirilen peluş oyuncaklar çocukların üzerine binerek gezinti yapabildiği RFID kart sistemi ile entgre çalışabilen oyuncaklardır. Ülkemize genelde Çin pazarından gelmektedir.
+Yapılan çalışmada hareketli peluş oyuncaklar için kontrol kartı yapılmıştır. Geliştirilen peluş oyuncaklar çocukların üzerine binerek gezinti yapabildiği ve RFID kart sistemi ile entgre çalışabilen oyuncaklardır. Ülkemize genelde Çin pazarından gelmektedir.
 <br><br> 
 
 ## Çalışma Şekli
-RFID kart okuyucuya kart okutulduğunda oyuncak çalışmaya başlar. Oyuncak üzerinde gaz pedalı ve yön değiştirmek için anahtar bulunmaktadır. Çocuk gaz pedalına bastığı müddetçe oyuncak yön anahtarı konumuna  göre ileri yada geri yönlü hareket eder.
+RFID kart okuyucuya kart okutulduğunda oyuncak çalışmaya başlar. Oyuncak üzerinde gaz pedalı ve yön değiştirmek için anahtar bulunmaktadır. Çocuk gaz pedalına bastığı müddetçe oyuncak yön anahtarı konumuna  göre ileri veya geri yönlü hareket eder.
 
-Kontrol kartı motorun hareketini soft start yaparak başlatır. Durma durumunda da soft stop yapılır. Kullanıcı ani hızlanma ve durmadan etkilenmez. Ayrıca ön tarafa konulan mesafe sensörü ile de önüne bir engel geldiğinde soft stop ile durur.
+Kontrol kartı motorun hareketini "soft star"t yaparak başlatır. Durma durumunda da "soft stop" yapılır. Kullanıcı ani hızlanma ve durmadan etkilenmez. Ayrıca ön tarafa konulan mesafe sensörü ile de önüne bir engel geldiğinde "soft stop" ile durur.
 
 Kontrol kartı akünün gerilim ve akımını anlık okuyarak şarj durumunu ve aşırı akım durumunu kontrol eder. Akünün şarja ihtiyacı varsa sesli uyarı verir. Aşırı akım durumunda ise sistemi ani olarak durdurur.
 
@@ -32,9 +32,9 @@ Kontrol kartı akünün gerilim ve akımını anlık okuyarak şarj durumunu ve 
 </p>
 
 
-Motor sürücü olarak BTS 7960 modül kullanılmıştır. Akım ölçmede ise ACS711EX akım sensörü kullanılmıştır.
+Motor sürücü olarak BTS7960 modül kullanılmıştır. Akım ölçmede ise ACS711EX akım sensörü kullanılmıştır.
 
-Ana denetleyicimiz demo aşamasında Arduino Nano'dur. Yazılımda akım ölçmek için hareketli ortalma kullanılmıştır.
+Yazılımda akım ve gerilim ölçmek için hareketli ortalama kullanılmıştır. Ana denetleyicimiz demo aşamasında Arduino Nano'dur. Oyun alanında yapılan denemelerden sonra bütün sistem tek bir kart üzerinde toplanacaktır. Burada ihtiyaca göre farklı denetleyici seçilebilir.
 
 <p  align="center">
 <img src="img/bos_mekanik.jpg" alt="pelus" width="30%" height="25%" align="center" style="margin:10px">
@@ -45,15 +45,14 @@ Resim: Boş mekanik aksam ve kontrol kartı kutusu.
 
 </p>
 
-
 ## Kullanılan Teknolojiler
 
 ```bash
 - Arduino Nano.
 - Arduino programlama.
 - Motor sürücüler.
-- PWM
-
+- PWM.
+- mp3 player.
 
 ```
 

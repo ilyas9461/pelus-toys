@@ -37,7 +37,8 @@
 #define BTN_RIGHT_PIN 6
 
 #define DIR_SW_PIN 12
-#define GAS_PEDAL_PIN 13
+#define GAS_PEDAL_PIN 13  // If PIN13 is digital input use, 
+                          // the board LED is must be disassmbly.
 #define MZ80_PIN 2
 
 #define VAKU_PIN A6
