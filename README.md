@@ -23,8 +23,8 @@ Kontrol kartı motorun hareketini soft start yaparak başlatır. Durma durumunda
 Kontrol kartı akünün gerilim ve akımını anlık okuyarak şarj durumunu ve aşırı akım durumunu kontrol eder. Akünün şarja ihtiyacı varsa sesli uyarı verir. Aşırı akım durumunda ise sistemi ani olarak durdurur.
 
 <p float="center">
-<img src="img/bts7960B_pin_mantik2.png" alt="pelus" width="150" style="margin-left:50px">
-<img src="img/acs711ex-akim-sensoru-.jpg" alt="pelus" width="150"   style="margin-left:10px">
+<img src="img/bts7960B_pin_mantik2.png" alt="pelus" width="300" style="margin-left:10px">
+<img src="img/acs711ex-akim-sensoru-.jpg" alt="pelus" width="300"   style="margin-left:10px">
 
 </p>
 
