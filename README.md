@@ -21,9 +21,9 @@ Yapılan çalışmada hareketli peluş oyuncaklar için kontrol kartı yapılmı
 ## Çalışma Şekli
 RFID kart okuyucuya kart okutulduğunda oyuncak çalışmaya başlar. Oyuncak üzerinde gaz pedalı ve yön değiştirmek için anahtar bulunmaktadır. Çocuk gaz pedalına bastığı müddetçe oyuncak yön anahtarı konumuna  göre ileri veya geri yönlü hareket eder.
 
-Kontrol kartı motorun hareketini "soft star"t yaparak başlatır. Durma durumunda da "soft stop" yapılır. Kullanıcı ani hızlanma ve durmadan etkilenmez. Ayrıca ön tarafa konulan mesafe sensörü ile de önüne bir engel geldiğinde "soft stop" ile durur.
+Kontrol kartı motorun hareketini "soft star" yaparak başlatır. Durma durumunda da "soft stop" yapılır. Kullanıcı ani hızlanma ve durmadan etkilenmez. Ayrıca ön tarafa konulan mesafe sensörü ile de önüne bir engel geldiğinde "soft stop" ile durur.
 
-Kontrol kartı akünün gerilim ve akımını anlık okuyarak şarj durumunu ve aşırı akım durumunu kontrol eder. Akünün şarja ihtiyacı varsa sesli uyarı verir. Aşırı akım durumunda ise sistemi ani olarak durdurur.
+Kontrol kartı akünün gerilim ve akımını anlık okuyarak şarj durumunu ve aşırı akım durumunu kontrol eder. Akünün şarja ihtiyacı varsa sesli uyarı verir. Aşırı akım durumunda ise sistemi ani olarak durdurulur.
 
 <p float="center">
 <img src="img/bts7960B_pin_mantik2.png" alt="pelus" width="300" style="margin-left:10px">
