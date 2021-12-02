@@ -35,8 +35,9 @@ Ana denetleyicimiz demo aşamasında Arduino Nano'dur. Yazılımda akım ölçme
 
 <p  align="center">
 <img src="img/bos_mekanik.jpg" alt="pelus" width="30%" height="25%" align="center" style="margin:10px">
+<img src="img/kutu.jpg" alt="pelus" width="30%" height="25%" align="center" style="margin:10px">
 <p align="center">
-Resim: Boş mekanik aksam.
+Resim: Boş mekanik aksam ve kontrol kartı kutusu.
 </p>
 
 </p>
