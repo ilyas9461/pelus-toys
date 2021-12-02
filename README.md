@@ -24,29 +24,38 @@ Kontrol kartı akünün gerilim ve akımını anlık okuyarak şarj durumunu ve 
 
 <p float="center">
 <img src="img/bts7960B_pin_mantik2.png" alt="pelus" width="300" style="margin-left:10px">
-<img src="img/acs711ex-akim-sensoru-.jpg" alt="pelus" width="300"   style="margin-left:10px">
+<img src="img/acs711ex-akim-sensoru-.jpg" alt="pelus" width="300"   style="margin-left:40px">
 
 </p>
-
 
 
 Motor sürücü olarak BTS 7960 modül kullanılmıştır. Akım ölçmede ise ACS711EX akım sensörü kullanılmıştır.
 
 Ana denetleyicimiz demo aşamasında Arduino Nano'dur. Yazılımda akım ölçmek için hareketli ortalma kullanılmıştır.
 
+<p  align="center">
+<img src="img/bos_mekanik.jpg" alt="pelus" width="30%" height="25%" align="center" style="margin:10px">
+<p align="center">
+Resim: Boş mekanik aksam.
+</p>
+
+</p>
+
+
 ## Kullanılan Teknolojiler
 
 ```bash
 - Arduino Nano.
 - Arduino programlama.
-- P10 led modüller.
+- Motor sürücüler.
+- PWM
 
 
 ```
 
 ## Test çalışma videosu :
 
-<a href="https://youtu.be/Q9nUwOI7k6M" target="_blank">
+<a href="https://youtu.be/92c82Suxs3E" target="_blank">
      <img src="https://camo.githubusercontent.com/241d4106ff5edca2ee25e04dcf4546fad9d20b626f7a10990307e8f83e95459f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f796f75747562652d2532334646303030302e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d796f7574756265266c6f676f436f6c6f723d7768697465253232" alt="youtube">
 </a>
 
