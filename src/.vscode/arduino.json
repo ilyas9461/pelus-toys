@@ -1,0 +1,6 @@
+{
+    "port": "COM3",
+    "board": "arduino:avr:nano",
+    "sketch": "pelus_nano.ino",
+    "configuration": "cpu=atmega328old"
+}
