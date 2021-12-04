@@ -21,7 +21,7 @@ Yapılan çalışmada hareketli peluş oyuncaklar için kontrol kartı yapılmı
 ## Çalışma Şekli
 RFID kart okuyucuya kart okutulduğunda oyuncak çalışmaya başlar. Oyuncak üzerinde gaz pedalı ve yön değiştirmek için anahtar bulunmaktadır. Çocuk gaz pedalına bastığı müddetçe oyuncak yön anahtarı konumuna  göre ileri veya geri yönlü hareket eder.
 
-Kontrol kartı motorun hareketini "soft star" yaparak başlatır. Durma durumunda da "soft stop" yapılır. Kullanıcı ani hızlanma ve durmadan etkilenmez. Ayrıca ön tarafa konulan mesafe sensörü ile de önüne bir engel geldiğinde "soft stop" ile durur.
+Kontrol kartı motorun hareketini "soft start" yaparak başlatır. Durma durumunda da "soft stop" yapılır. Kullanıcı ani hızlanma ve durmadan etkilenmez. Ayrıca ön tarafa konulan mesafe sensörü ile de önüne bir engel geldiğinde "soft stop" ile durur.
 
 Kontrol kartı akünün gerilim ve akımını anlık okuyarak şarj durumunu ve aşırı akım durumunu kontrol eder. Akünün şarja ihtiyacı varsa sesli uyarı verir. Aşırı akım durumunda ise sistemi ani olarak durdurulur.
 
@@ -45,6 +45,10 @@ Resim: Boş mekanik aksam ve kontrol kartı kutusu.
 
 </p>
 
+Mekanik yapıya kontrol sistemi entegre edilerek testler yapılmıştır. Kullanıdığımız motorlarda, mekanik frenleme olmadığından dolayı durma durumlarında hareket biraz daha devam etmiştir. Yazılımsal olarak motor sürücüsü üzerinden frenleme yaptırılmıştır.
+
+Testlerle ilgili video görüntüleri linkleri aşağıda verilmiştir.
+
 ## Kullanılan Teknolojiler
 
 ```bash
@@ -56,9 +60,15 @@ Resim: Boş mekanik aksam ve kontrol kartı kutusu.
 
 ```
 
-## Test çalışma videosu :
+## Masa üstü testi çalışma videosu :
 
 <a href="https://youtu.be/92c82Suxs3E" target="_blank">
+     <img src="https://camo.githubusercontent.com/241d4106ff5edca2ee25e04dcf4546fad9d20b626f7a10990307e8f83e95459f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f796f75747562652d2532334646303030302e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d796f7574756265266c6f676f436f6c6f723d7768697465253232" alt="youtube">
+</a>
+
+## Meknaik yapıya kurulu şekilde yapılan test videosu :
+
+<a href="https://youtu.be/wljWACHbzdw" target="_blank">
      <img src="https://camo.githubusercontent.com/241d4106ff5edca2ee25e04dcf4546fad9d20b626f7a10990307e8f83e95459f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f796f75747562652d2532334646303030302e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d796f7574756265266c6f676f436f6c6f723d7768697465253232" alt="youtube">
 </a>
 
