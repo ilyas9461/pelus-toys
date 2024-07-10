@@ -5,9 +5,9 @@
 
 <h4 align="left">Contents</h4>
 
-- [Giriş](#Introduction)
-- [Çalışma Şekli](#How-is-it-working?)
-- [Kullanılan Teknolojiler](#Used-Technologies)
+- [Introduction](#Introduction)
+- [How is it working?](#How-is-it-working?)
+- [Used Technologies](#Used-Technologies)
 
 ## Introduction
 <p  align="center">
