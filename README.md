@@ -21,7 +21,8 @@ In the study, a control card was made to move plush toys. The developed plush to
 The toy starts working when the card is read into the RFID card reader. There is a gas pedal and a switch to change direction on the toy. As long as the child presses the gas pedal, the toy moves forward or backwards depending on the direction switch position.
 
 The control card starts the movement of the motor by performing a "soft start". In case of stopping, a "soft stop" is performed. The user is not affected by sudden acceleration and stopping. In addition, with the distance sensor placed on the front, it stops with a "soft stop" when encountering an obstacle.
-Kontrol kartı akünün gerilim ve akımını anlık okuyarak şarj durumunu ve aşırı akım durumunu kontrol eder. Akünün şarja ihtiyacı varsa sesli uyarı verir. Aşırı akım durumunda ise sistemi ani olarak durdurulur.
+
+The control card checks the charging status and overcurrent status by instantly reading the battery's voltage and current. If the battery needs charging, it gives an audible warning. In case of overcurrent, the system is stopped suddenly.
 
 <p float="center">
 <img src="img/bts7960B_pin_mantik2.png" alt="pelus" width="300" style="margin-left:10px">
@@ -33,6 +34,7 @@ Kontrol kartı akünün gerilim ve akımını anlık okuyarak şarj durumunu ve 
 BTS7960 module was used as the motor driver. ACS711EX current sensor was used for current measurement.
 
 The moving average is used to measure current and voltage in the software. Our main controller is Arduino Nano in the demo phase. After the trials on the playing field, the entire system will be collected on a single card. Here, different controllers can be selected according to need.
+
 <p  align="center">
 <img src="img/bos_mekanik.jpg" alt="pelus" width="30%" height="25%" align="center" style="margin:10px">
 <img src="img/kutu.jpg" alt="pelus" width="30%" height="25%" align="center" style="margin:10px">
