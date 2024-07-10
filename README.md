@@ -50,20 +50,21 @@ Links to video footage of the tests are given below.
 
 ```bash
 - Arduino Nano.
-- Arduino programlama.
-- Motor sürücüler.
+- Arduino programming with c++.
+- Motor drivers.
 - PWM.
 - mp3 player.
+- Electronic circuts design and PCB
 
 ```
 
-## Masa üstü testi çalışma videosu :
+## Desktop test operation video :
 
 <a href="https://youtu.be/92c82Suxs3E" target="_blank">
      <img src="./img/youtube.png" alt="youtube" width="55">
 </a>
 
-## Meknaik yapıya kurulu şekilde yapılan test videosu :
+## Test video installed on mechanical structure :
 
 <a href="https://youtu.be/wljWACHbzdw" target="_blank">
       <img src="./img/youtube.png" alt="youtube" width="55">
