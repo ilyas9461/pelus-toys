@@ -6,7 +6,7 @@
 <h4 align="left">Contents</h4>
 
 - [Introduction](#Introduction)
-- [How is it working?](#How-is-it-working?)
+- [How is it working?](#How-is-it-working)
 - [Used Technologies](#Used-Technologies)
 
 ## Introduction
